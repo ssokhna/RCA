@@ -1,0 +1,133 @@
+2025-01-13T15:44:06.496163 [RRC    ] [I] Tx Broadcast PDU - systemInformation-r8, cc=0, idx=1 (33 B)
+    0000: 00 80 0c e1 bf 78 88 00 ca 11 e0 01 00 00 08 01
+    0010: 82 99 45 ab 9c 30 c6 a6 cc c1 c2 14 62 d8 4e a5
+2025-01-13T15:44:06.496191 [RRC    ] [D] Content:
+[
+  {
+    "BCCH-DL-SCH-Message": {
+      "message": {
+        "c1": {
+          "systemInformation": {
+            "criticalExtensions": {
+              "systemInformation-r8": {
+                "sib-TypeAndInfo": [
+                  {
+                    "sib2": {
+                      "radioResourceConfigCommon": {
+                        "rach-ConfigCommon": {
+                          "preambleInfo": {
+                            "numberOfRA-Preambles": "n52"
+                          },
+                          "powerRampingParameters": {
+                            "powerRampingStep": "dB6",
+                            "preambleInitialReceivedTargetPower": "dBm-104"
+                          },
+                          "ra-SupervisionInfo": {
+                            "preambleTransMax": "n10",
+                            "ra-ResponseWindowSize": "sf10",
+                            "mac-ContentionResolutionTimer": "sf64"
+                          },
+                          "maxHARQ-Msg3Tx": 4
+                        },
+                        "bcch-Config": {
+                          "modificationPeriodCoeff": "n16"
+                        },
+                        "pcch-Config": {
+                          "defaultPagingCycle": "rf32",
+                          "nB": "oneT"
+                        },
+                        "prach-Config": {
+                          "rootSequenceIndex": 128,
+                          "prach-ConfigInfo": {
+                            "prach-ConfigIndex": 3,
+                            "highSpeedFlag": false,
+                            "zeroCorrelationZoneConfig": 5,
+                            "prach-FreqOffset": 4
+                          }
+                        },
+                        "pdsch-ConfigCommon": {
+                          "referenceSignalPower": 0,
+                          "p-b": 0
+                        },
+                        "pusch-ConfigCommon": {
+                          "pusch-ConfigBasic": {
+                            "n-SB": 1,
+                            "hoppingMode": "interSubFrame",
+                            "pusch-HoppingOffset": 2,
+                            "enable64QAM": false
+                          },
+                          "ul-ReferenceSignalsPUSCH": {
+                            "groupHoppingEnabled": false,
+                            "groupAssignmentPUSCH": 0,
+                            "sequenceHoppingEnabled": false,
+                            "cyclicShift": 0
+                          }
+                        },
+                        "pucch-ConfigCommon": {
+                          "deltaPUCCH-Shift": "ds1",
+                          "nRB-CQI": 1,
+                          "nCS-AN": 0,
+                          "n1PUCCH-AN": 12
+                        },
+                        "soundingRS-UL-ConfigCommon": {
+                        },
+                        "uplinkPowerControlCommon": {
+                          "p0-NominalPUSCH": -85,
+                          "alpha": "al07",
+                          "p0-NominalPUCCH": -107,
+                          "deltaFList-PUCCH": {
+                            "deltaF-PUCCH-Format1": "deltaF0",
+                            "deltaF-PUCCH-Format1b": "deltaF3",
+                            "deltaF-PUCCH-Format2": "deltaF1",
+                            "deltaF-PUCCH-Format2a": "deltaF2",
+                            "deltaF-PUCCH-Format2b": "deltaF2"
+                          },
+                          "deltaPreambleMsg3": 6
+                        },
+                        "ul-CyclicPrefixLength": "len1"
+                      },
+                      "ue-TimersAndConstants": {
+                        "t300": "ms2000",
+                        "t301": "ms100",
+                        "t310": "ms200",
+                        "n310": "n1",
+                        "t311": "ms10000",
+                        "n311": "n1"
+                      },
+                      "freqInfo": {
+                        "ul-CarrierFreq": 21350,
+                        "ul-Bandwidth": "n50",
+                        "additionalSpectrumEmission": 1
+                      },
+                      "timeAlignmentTimerCommon": "infinity"
+                    }
+                  },
+                  {
+                    "sib3": {
+                      "cellReselectionInfoCommon": {
+                        "q-Hyst": "dB2"
+                      },
+                      "cellReselectionServingFreqInfo": {
+                        "s-NonIntraSearch": 3,
+                        "threshServingLow": 2,
+                        "cellReselectionPriority": 6
+                      },
+                      "intraFreqCellReselectionInfo": {
+                        "q-RxLevMin": -61,
+                        "p-Max": 23,
+                        "s-IntraSearch": 5,
+                        "presenceAntennaPort1": true,
+                        "neighCellConfig": "01",
+                        "t-ReselectionEUTRA": 1
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]
