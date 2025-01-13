@@ -1,0 +1,395 @@
+2025-01-13T16:39:50.781996 [NAS    ] [D] Attempting to select PLMN
+2025-01-13T16:39:50.781996 [STCK   ] [D] tti_tprof: duration=0 msec
+2025-01-13T16:39:50.782999 [PHY    ] [D] [    0] run_stack_tti: from recv
+2025-01-13T16:39:50.782999 [PHY    ] [D] [    0] run_stack_tti: calling stack tti=526, tti_jump=1
+2025-01-13T16:39:50.783000 [PHY    ] [D] [    0] run_stack_tti: stack called
+2025-01-13T16:39:50.783000 [PHY    ] [D] [    0] SYNC:  received 1920 samples from radio
+2025-01-13T16:39:50.783028 [MAC    ] [D] [  526] Running MAC tti=526
+2025-01-13T16:39:50.783028 [MAC    ] [D] [  526] Update Bj: lcid=0, Bj=0
+2025-01-13T16:39:50.783028 [MAC    ] [D] [  526] Update Bj: lcid=1, Bj=0
+2025-01-13T16:39:50.783029 [MAC    ] [D] [  526] RA:    IDLE:    rar_window_start=-1, rar_window_length=-1
+2025-01-13T16:39:50.783029 [MAC-NR ] [D] [  526] Running MAC tti=526
+2025-01-13T16:39:50.783030 [MAC-NR ] [D] [  526] nof_lcids_with_data=0, nof_lcgs_with_data=0, last_non_zero_lcg=-1 [] []
+2025-01-13T16:39:50.783030 [NAS    ] [D] Attempting to select PLMN
+2025-01-13T16:39:50.783031 [STCK   ] [D] tti_tprof: duration=0 msec
+2025-01-13T16:39:50.783096 [PHY    ] [I] [    0] SYNC:  MIB Decoded: Mode=FDD, PCI=1, PRB=50, Ports=1, CFO=9.5 KHz
+2025-01-13T16:39:50.783113 [PHY    ] [D] [    0] SYNC:  state=SEARCH, tti=527
+2025-01-13T16:39:50.783114 [PHY    ] [D] [    0] Discarding 1920 samples
+2025-01-13T16:39:50.783144 [RLC    ] [I] BCCH BCH message received.
+    0000: 62 38 00
+2025-01-13T16:39:50.783153 [PHY    ] [I] [    0] Cell Search: Found cell with PCI=1 with 50 PRB
+2025-01-13T16:39:50.783154 [PHY    ] [I] [    0] Cell Search: No more frequencies in the current EARFCN set
+2025-01-13T16:39:50.783176 [RRC    ] [D] BCCH-BCH - Rx MIB (3 B)
+    0000: 62 38 00
+2025-01-13T16:39:50.783177 [RRC    ] [D] Content:
+[
+  {
+    "BCCH-BCH-Message": {
+      "message": {
+        "dl-Bandwidth": "n50",
+        "phich-Config": {
+          "phich-Duration": "normal",
+          "phich-Resource": "oneSixth"
+        },
+        "systemFrameNumber": "10001110",
+        "schedulingInfoSIB1-BR-r13": 0,
+        "systemInfoUnchanged-BR-r15": false,
+        "partEARFCN-17": {
+          "spare": "00"
+        },
+        "spare": "0"
+      }
+    }
+  }
+]
+2025-01-13T16:39:50.783181 [RRC    ] [I] FSM "phy_controller" - PHY cell search completed. Found cell {pci=1, dl_earfcn=3350}
+2025-01-13T16:39:50.783182 [RRC    ] [I] FSM "phy_controller" - transition detected - searching_cell -> unknown_st (cause: cell_srch_res)
+2025-01-13T16:39:50.783183 [RRC    ] [I] Proc "Cell Search" - Cell found in this frequency. Setting new serving cell EARFCN=3350 PCI=1 ...
+2025-01-13T16:39:50.783188 [RRC    ] [I] Adding neighbour cell {cell_id: 0x0, pci: 1, dl_earfcn: 3350, rsrp=+nan, cfo=+9564.7}, nof_neighbours=1
+2025-01-13T16:39:50.783190 [RRC    ] [D] Neighbours: [{cell_id: 0x0, pci: 1, dl_earfcn: 3350, rsrp=+nan, cfo=+9564.7}]
+2025-01-13T16:39:50.783191 [RRC    ] [I] Setting serving cell {cell_id: 0x0, pci: 1, dl_earfcn: 3350, rsrp=+nan, cfo=+9564.7}, nof_neighbours=0
+2025-01-13T16:39:50.783196 [RRC    ] [I] FSM "phy_controller" - transition detected - unknown_st -> selecting_cell (cause: cell_sel_cmd)
+2025-01-13T16:39:50.783197 [RRC    ] [I] FSM "selecting_cell" - Starting for pci=1, earfcn=3350
+2025-01-13T16:39:50.783197 [PHY    ] [I] [    0] Cell Select: Going to IDLE
+2025-01-13T16:39:50.783244 [PHY    ] [I] [    0] Resetting PHY...
+2025-01-13T16:39:50.783245 [PHY    ] [I] [    0] PHY:   Set TA base: n_ta: 0, ta_usec: 0.0
+2025-01-13T16:39:50.784028 [PHY    ] [D] [    0] run_stack_tti: from recv
+...............................................
+2025-01-13T16:39:52.682633 [RRC    ] [D] MEAS:  Processing measurement of 1 cells
+2025-01-13T16:39:52.682634 [RRC    ] [I] MEAS:  New measurement serving cell: earfcn=0, pci=1, rsrp=-53.84 dBm, cfo=+9660.2 Hz
+2025-01-13T16:39:52.682635 [RRC    ] [I] Proc "Cell Search" - Cell has no SIB1. Obtaining SIB1...
+2025-01-13T16:39:52.682636 [RRC    ] [I] Proc "SI Acquire" - Starting SI Acquisition procedure for SIB1
+2025-01-13T16:39:52.682637 [MAC    ] [I] [ 7600] SCHED: Searching for DL dci for SI-RNTI window_st=7625, window_len=1
+2025-01-13T16:39:52.682638 [RRC    ] [I] Proc "SI Acquire" - Instructed MAC to search for SIB1, win_start=7625, win_len=1, period=20, sched_index=0
+2025-01-13T16:39:52.682638 [NAS    ] [D] Attempting to select PLMN
+2025-01-13T16:39:52.682639 [STCK   ] [D] tti_tprof: duration=0 msec
+2025-01-13T16:39:52.683614 [PHY    ] [D] [ 7601] SYNC:  received 11520 samples from radio
+2025-01-13T16:39:52.683640 [PHY    ] [D] [ 7601] SYNC:  Worker 0 synchronized
+................................................
+2025-01-13T16:39:52.707658 [MAC    ] [D] [ 7625] Delivering PDU=18 bytes to Dissassemble and Demux unit (BCCH)
+2025-01-13T16:39:52.707659 [MAC    ] [I] [ 7625] DL 0 (TB 0):  newTX tbs=18, rv=2, ack=OK, ndi=0
+2025-01-13T16:39:52.707661 [PHY0   ] [D] [ 7625] set_uci_sr() query: sr_enabled=0, last_tx_tti=-1
+2025-01-13T16:39:52.707662 [PHY    ] [D] [ 7625] SNR=15.1 dB, RSRP=-54.2 dBm sync=in-sync from channel estimator
+2025-01-13T16:39:52.707759 [MAC    ] [D] [ 7625] Processing MAC PDU channel 1
+2025-01-13T16:39:52.707760 [RLC    ] [I] BCCH TXSCH message received.
+    0000: 40 40 14 0b 00 07 00 19 a0 18 14 60 10 82 80 00
+    0010: 00 00
+2025-01-13T16:39:52.707761 [MAC    ] [I] [ 7625] SCHED: Searching for DL dci for SI-RNTI window_st=-1, window_len=-1
+2025-01-13T16:39:52.707782 [RRC    ] [D] BCCH-DLSCH - Rx systemInformationBlockType1 (18 B)
+    0000: 40 40 14 0b 00 07 00 19 a0 18 14 60 10 82 80 00
+    0010: 00 00
+2025-01-13T16:39:52.707783 [RRC    ] [D] Content:
+[
+  {
+    "BCCH-DL-SCH-Message": {
+      "message": {
+        "c1": {
+          "systemInformationBlockType1": {
+            "cellAccessRelatedInfo": {
+              "plmn-IdentityList": [
+                {
+                  "plmn-Identity": {
+                    "mcc": [
+                      0,
+                      0,
+                      5
+                    ],
+                    "mnc": [
+                      0,
+                      5
+                    ]
+                  },
+                  "cellReservedForOperatorUse": "notReserved"
+                }
+              ],
+              "trackingAreaCode": "0000000000000111",
+              "cellIdentity": "0000000000011001101000000001",
+              "cellBarred": "notBarred",
+              "intraFreqReselection": "allowed",
+              "csg-Indication": false
+            },
+            "cellSelectionInfo": {
+              "q-RxLevMin": -65
+            },
+            "freqBandIndicator": 7,
+            "schedulingInfoList": [
+              {
+                "si-Periodicity": "rf16",
+                "sib-MappingInfo": [
+                  "sibType3"
+                ]
+              }
+            ],
+            "si-WindowLength": "ms20",
+            "systemInfoValueTag": 0
+          }
+        }
+      }
+    }
+  }
+]
+2025-01-13T16:39:52.707784 [RRC    ] [I] Processing SIB1 (1/1)
+2025-01-13T16:39:52.707787 [RRC    ] [I] Proc "SI Acquire" - SIB1 acquired successfully
+2025-01-13T16:39:52.707787 [RRC    ] [I] SIB1 received, CellID=2561, si_window=20, sib2_period=16
+2025-01-13T16:39:52.707788 [RRC    ] [D] SIB scheduling info, sib_type=3, si_periodicity=16
+2025-01-13T16:39:52.708555 [PHY    ] [D] [ 7626] SYNC:  received 11520 samples from radio
+2025-01-13T16:39:52.708564 [PHY    ] [D] [ 7626] SYNC:  Worker 1 synchronized
+2025-01-13T16:39:52.708568 [PHY    ] [D] [ 7626] run_stack_tti: from main
+2025-01-13T16:39:52.708568 [PHY    ] [D] [ 7626] run_stack_tti: calling stack tti=7626, tti_jump=1
+2025-01-13T16:39:52.708569 [PHY    ] [D] [ 7626] run_stack_tti: stack called
+2025-01-13T16:39:52.708570 [PHY    ] [D] [ 7626] SYNC:  state=CAMPING, tti=7627
+2025-01-13T16:39:52.708623 [MAC    ] [D] [ 7626] Running MAC tti=7626
+2025-01-13T16:39:52.708623 [MAC    ] [D] [ 7626] Update Bj: lcid=0, Bj=0
+2025-01-13T16:39:52.708623 [MAC    ] [D] [ 7626] Update Bj: lcid=1, Bj=0
+2025-01-13T16:39:52.708623 [PHY1   ] [D] [ 7626] set_uci_sr() query: sr_enabled=0, last_tx_tti=-1
+2025-01-13T16:39:52.708625 [MAC    ] [D] [ 7626] RA:    IDLE:    rar_window_start=-1, rar_window_length=-1
+2025-01-13T16:39:52.708625 [PHY    ] [D] [ 7626] SNR=14.7 dB, RSRP=-54.2 dBm sync=in-sync from channel estimator
+2025-01-13T16:39:52.708625 [MAC-NR ] [D] [ 7626] Running MAC tti=7626
+2025-01-13T16:39:52.708628 [MAC-NR ] [D] [ 7626] nof_lcids_with_data=0, nof_lcgs_with_data=0, last_non_zero_lcg=-1 [] []
+2025-01-13T16:39:52.708630 [RRC    ] [I] Proc "Cell Search" - Completed successfully
+2025-01-13T16:39:52.708631 [RRC    ] [I] Proc "PLMN Search" - completed PLMN search
+2025-01-13T16:39:52.708631 [RRC    ] [I] Proc "PLMN Search" - completed with success
+2025-01-13T16:39:52.708632 [NAS    ] [I] Proc "NAS PLMN Search" - Found PLMN:  Id=00505, TAC=7
+2025-01-13T16:39:52.708640 [NAS    ] [D] Selecting PLMN from list of known PLMNs.
+2025-01-13T16:39:52.708640 [NAS    ] [I] Selecting Home PLMN Id=00505
+2025-01-13T16:39:52.708642 [NAS    ] [D] Changed to EMM state: DEREGISTERED, with substate NORMAL-SERVICE
+2025-01-13T16:39:52.708644 [RRC    ] [I] PLMN Selected 00505
+2025-01-13T16:39:52.708645 [NAS    ] [I] Proc "NAS PLMN Search" - Completed with success
+2025-01-13T16:39:52.708646 [NAS    ] [I] Attach Request with cause mo-Data.
+2025-01-13T16:39:52.708646 [NAS    ] [D] Starting T3410
+2025-01-13T16:39:52.708648 [NAS    ] [I] Generating attach request
+2025-01-13T16:39:52.708650 [NAS    ] [I] Generating PDN Connectivity Request
+2025-01-13T16:39:52.708650 [NAS    ] [D] Requesting IPv4 PDN protocol
+2025-01-13T16:39:52.708651 [NAS    ] [I] Requesting GUTI attach. m_tmsi: c83040e1, mcc: 5, mnc: 5, mme_group_id: 1, mme_code: 1a
+2025-01-13T16:39:52.708773 [NAS    ] [D] Starting T3410. Timeout in 15000 ms.
+2025-01-13T16:39:52.708773 [NAS    ] [D] Initiating RRC Connection
+2025-01-13T16:39:52.708774 [RRC    ] [I] Proc "Connection Request" - Initiation of Connection establishment procedure
+2025-01-13T16:39:52.708775 [RRC    ] [I] Proc "Cell Selection" - Starting...
+2025-01-13T16:39:52.708776 [RRC    ] [I] Proc "Cell Selection" - Current neighbor cells: []
+2025-01-13T16:39:52.708776 [RRC    ] [I] Proc "Cell Selection" - Current PHY state: in-sync
+2025-01-13T16:39:52.708777 [RRC    ] [I] Proc "Cell Selection" - Cell selection criteria: not available
+2025-01-13T16:39:52.708780 [RRC    ] [I] Proc "Cell Selection" - Current serving cell: {cell_id: 0x19a01, pci: 1, dl_earfcn: 3350, rsrp=-54.0, cfo=+9775.3}
+2025-01-13T16:39:52.708781 [RRC    ] [I] Proc "Cell Selection" - PHY is camping on serving cell, but SIBs need to be acquired
+2025-01-13T16:39:52.708782 [RRC    ] [I] Proc "Serving Cell Configuration" - Starting a Serving Cell Configuration Procedure
+2025-01-13T16:39:52.708782 [RRC    ] [I] Proc "Serving Cell Configuration" - Cell has SIB1
+2025-01-13T16:39:52.708782 [RRC    ] [I] Proc "Serving Cell Configuration" - Cell has no SIB2. Obtaining SIB2
+2025-01-13T16:39:52.708783 [RRC    ] [I] Proc "SI Acquire" - Starting SI Acquisition procedure for SIB2
+2025-01-13T16:39:52.708784 [MAC    ] [I] [ 7626] SCHED: Searching for DL dci for SI-RNTI window_st=7680, window_len=20
+2025-01-13T16:39:52.708784 [RRC    ] [I] Proc "SI Acquire" - Instructed MAC to search for SIB2, win_start=7680, win_len=20, period=16, sched_index=0
+.....................................
+2025-01-13T16:39:52.771485 [MAC-NR ] [D] [ 7689] nof_lcids_with_data=0, nof_lcgs_with_data=0, last_non_zero_lcg=-1 [] []
+2025-01-13T16:39:52.771486 [STCK   ] [D] tti_tprof: duration=0 msec
+2025-01-13T16:39:52.771513 [MAC    ] [D] [ 7689] SCHED: Searching SI-RNTI, tti=7689, window start=7680, length=20
+2025-01-13T16:39:52.771514 [PHY0   ] [D] [ 7689] PDCCH looking for rnti=0xffff
+2025-01-13T16:39:52.771533 [PHY0   ] [I] [ 7689] PDCCH: cc=0, f=1A, cce= 0, L=2, riv=100, pid=0, mcs={7}, ndi={0}, tpc_pucch=0, snr=19.6 dB
+2025-01-13T16:39:52.771535 [MAC    ] [D] [ 7689] Set HARQ for new transmission
+2025-01-13T16:39:52.771566 [PHY0   ] [I] [ 7689] PDSCH: cc=0, rnti=0xffff, nof_prb=3, nof_re=450, tbs={41}, mod={2}, rv={0}, crc={OK}, it=1.0, snr=19.6 dB
+2025-01-13T16:39:52.771567 [MAC    ] [D] [ 7689] Delivering PDU=41 bytes to Dissassemble and Demux unit (BCCH)
+2025-01-13T16:39:52.771568 [MAC    ] [I] [ 7689] DL 0 (TB 0):  newTX tbs=41, rv=0, ack=OK, ndi=0
+2025-01-13T16:39:52.771569 [PHY0   ] [D] [ 7689] set_uci_sr() query: sr_enabled=0, last_tx_tti=-1
+2025-01-13T16:39:52.771572 [PHY    ] [D] [ 7689] SNR=16.2 dB, RSRP=-55.0 dBm sync=in-sync from channel estimator
+2025-01-13T16:39:52.771592 [MAC    ] [D] [ 7689] Processing MAC PDU channel 1
+2025-01-13T16:39:52.771593 [RLC    ] [I] BCCH TXSCH message received.
+    0000: 00 80 0c e1 bf 78 88 00 ca 11 e0 01 00 00 08 01
+    0010: 82 99 45 ab 9c 30 c6 a6 cc c1 c2 14 62 d8 4e a5
+2025-01-13T16:39:52.771618 [MAC    ] [I] [ 7689] SCHED: Searching for DL dci for SI-RNTI window_st=-1, window_len=-1
+2025-01-13T16:39:52.771675 [RRC    ] [D] BCCH-DLSCH - Rx systemInformation (41 B)
+    0000: 00 80 0c e1 bf 78 88 00 ca 11 e0 01 00 00 08 01
+    0010: 82 99 45 ab 9c 30 c6 a6 cc c1 c2 14 62 d8 4e a5
+2025-01-13T16:39:52.771677 [RRC    ] [D] Content:
+[
+  {
+    "BCCH-DL-SCH-Message": {
+      "message": {
+        "c1": {
+          "systemInformation": {
+            "criticalExtensions": {
+              "systemInformation-r8": {
+                "sib-TypeAndInfo": [
+                  {
+                    "sib2": {
+                      "radioResourceConfigCommon": {
+                        "rach-ConfigCommon": {
+                          "preambleInfo": {
+                            "numberOfRA-Preambles": "n52"
+                          },
+                          "powerRampingParameters": {
+                            "powerRampingStep": "dB6",
+                            "preambleInitialReceivedTargetPower": "dBm-104"
+                          },
+                          "ra-SupervisionInfo": {
+                            "preambleTransMax": "n10",
+                            "ra-ResponseWindowSize": "sf10",
+                            "mac-ContentionResolutionTimer": "sf64"
+                          },
+                          "maxHARQ-Msg3Tx": 4
+                        },
+                        "bcch-Config": {
+                          "modificationPeriodCoeff": "n16"
+                        },
+                        "pcch-Config": {
+                          "defaultPagingCycle": "rf32",
+                          "nB": "oneT"
+                        },
+                        "prach-Config": {
+                          "rootSequenceIndex": 128,
+                          "prach-ConfigInfo": {
+                            "prach-ConfigIndex": 3,
+                            "highSpeedFlag": false,
+                            "zeroCorrelationZoneConfig": 5,
+                            "prach-FreqOffset": 4
+                          }
+                        },
+                        "pdsch-ConfigCommon": {
+                          "referenceSignalPower": 0,
+                          "p-b": 0
+                        },
+                        "pusch-ConfigCommon": {
+                          "pusch-ConfigBasic": {
+                            "n-SB": 1,
+                            "hoppingMode": "interSubFrame",
+                            "pusch-HoppingOffset": 2,
+                            "enable64QAM": false
+                          },
+                          "ul-ReferenceSignalsPUSCH": {
+                            "groupHoppingEnabled": false,
+                            "groupAssignmentPUSCH": 0,
+                            "sequenceHoppingEnabled": false,
+                            "cyclicShift": 0
+                          }
+                        },
+                        "pucch-ConfigCommon": {
+                          "deltaPUCCH-Shift": "ds1",
+                          "nRB-CQI": 1,
+                          "nCS-AN": 0,
+                          "n1PUCCH-AN": 12
+                        },
+                        "soundingRS-UL-ConfigCommon": {
+                        },
+                        "uplinkPowerControlCommon": {
+                          "p0-NominalPUSCH": -85,
+                          "alpha": "al07",
+                          "p0-NominalPUCCH": -107,
+                          "deltaFList-PUCCH": {
+                            "deltaF-PUCCH-Format1": "deltaF0",
+                            "deltaF-PUCCH-Format1b": "deltaF3",
+                            "deltaF-PUCCH-Format2": "deltaF1",
+                            "deltaF-PUCCH-Format2a": "deltaF2",
+                            "deltaF-PUCCH-Format2b": "deltaF2"
+                          },
+                          "deltaPreambleMsg3": 6
+                        },
+                        "ul-CyclicPrefixLength": "len1"
+                      },
+                      "ue-TimersAndConstants": {
+                        "t300": "ms2000",
+                        "t301": "ms100",
+                        "t310": "ms200",
+                        "n310": "n1",
+                        "t311": "ms10000",
+                        "n311": "n1"
+                      },
+                      "freqInfo": {
+                        "ul-CarrierFreq": 21350,
+                        "ul-Bandwidth": "n50",
+                        "additionalSpectrumEmission": 1
+                      },
+                      "timeAlignmentTimerCommon": "infinity"
+                    }
+                  },
+                  {
+                    "sib3": {
+                      "cellReselectionInfoCommon": {
+                        "q-Hyst": "dB2"
+                      },
+                      "cellReselectionServingFreqInfo": {
+                        "s-NonIntraSearch": 3,
+                        "threshServingLow": 2,
+                        "cellReselectionPriority": 6
+                      },
+                      "intraFreqCellReselectionInfo": {
+                        "q-RxLevMin": -61,
+                        "p-Max": 23,
+                        "s-IntraSearch": 5,
+                        "presenceAntennaPort1": true,
+                        "neighCellConfig": "01",
+                        "t-ReselectionEUTRA": 1
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]
+2025-01-13T16:39:52.771677 [RRC    ] [I] Processing SIB2 (0/2)
+2025-01-13T16:39:52.771680 [RRC    ] [I] SIB2 received
+2025-01-13T16:39:52.771680 [MAC    ] [I] [ 7689] Setting configuration
+2025-01-13T16:39:52.771681 [MAC    ] [I] [ 7689] BSR:   Configured timer reTX 2560 ms
+2025-01-13T16:39:52.771682 [RRC    ] [I] Setting PHY config for cc_idx=0
+2025-01-13T16:39:52.771683 [PHY    ] [I] [ 7689] Setting configuration
+2025-01-13T16:39:52.771687 [RRC    ] [I] Set RACH ConfigCommon: NofPreambles=52, ResponseWindow=10, ContentionResolutionTimer=64 ms
+2025-01-13T16:39:52.771687 [RRC    ] [I] Set PUSCH ConfigCommon: P0_pusch=0.000000, DMRS cs=0, delta_ss=0, N_sb=1
+2025-01-13T16:39:52.771687 [RRC    ] [I] Set PUCCH ConfigCommon: DeltaShift=1, CyclicShift=0, N1=0, NRB=1
+2025-01-13T16:39:52.771688 [RRC    ] [I] Set PRACH ConfigCommon: SeqIdx=128, HS=no, FreqOffset=4, ZC=5, ConfigIndex=3
+2025-01-13T16:39:52.771689 [RRC    ] [I] Set Constants and Timers: N310=1, N311=1, t300=2000, t301=100, t310=200, t311=10000
+2025-01-13T16:39:52.771690 [RRC    ] [I] Proc "SI Acquire" - SIB2 acquired successfully
+2025-01-13T16:39:52.771690 [RRC    ] [I] Processing SIB3 (1/2)
+2025-01-13T16:39:52.771691 [RRC    ] [I] SIB3 received
+2025-01-13T16:39:52.771695 [PHY    ] [I] [ 7689] Setting new PHY configuration cc_idx=0...
+2025-01-13T16:39:52.771696 [PHY    ] [D] [ 7689] Configuring PRACH parameters
+2025-01-13T16:39:52.771696 [PHY    ] [I] [ 7689] PRACH: cell.id=1, configIdx=3, rootSequence=128, zeroCorrelationConfig=5, freqOffset=4
+2025-01-13T16:39:52.772481 [PHY    ] [D] [ 7690] SYNC:  received 11520 samples from radio
+2025-01-13T16:39:52.772508 [PHY    ] [D] [ 7690] SYNC:  Worker 1 synchronized
+2025-01-13T16:39:52.772510 [PHY    ] [D] [ 7690] run_stack_tti: from main
+2025-01-13T16:39:52.772510 [PHY    ] [D] [ 7690] run_stack_tti: calling stack tti=7690, tti_jump=1
+2025-01-13T16:39:52.772511 [PHY    ] [D] [ 7690] run_stack_tti: stack called
+2025-01-13T16:39:52.772511 [PHY    ] [D] [ 7690] SYNC:  state=CAMPING, tti=7691
+2025-01-13T16:39:52.772529 [MAC    ] [D] [ 7690] Running MAC tti=7690
+2025-01-13T16:39:52.772530 [MAC    ] [D] [ 7690] Update Bj: lcid=0, Bj=0
+2025-01-13T16:39:52.772530 [MAC    ] [D] [ 7690] Update Bj: lcid=1, Bj=0
+2025-01-13T16:39:52.772531 [MAC    ] [D] [ 7690] RA:    IDLE:    rar_window_start=-1, rar_window_length=-1
+2025-01-13T16:39:52.772532 [MAC-NR ] [D] [ 7690] Running MAC tti=7690
+2025-01-13T16:39:52.772533 [MAC-NR ] [D] [ 7690] nof_lcids_with_data=0, nof_lcgs_with_data=0, last_non_zero_lcg=-1 [] []
+2025-01-13T16:39:52.772535 [RRC    ] [I] Proc "Serving Cell Configuration" - Cell has SIB3
+..............................................
+2025-01-13T16:39:52.772546 [RRC    ] [I] Proc "Connection Request" - Configuring serving cell...
+2025-01-13T16:39:52.772547 [RRC    ] [I] Proc "Serving Cell Configuration" - Starting a Serving Cell Configuration Procedure
+2025-01-13T16:39:52.772547 [RRC    ] [I] Proc "Serving Cell Configuration" - Cell has SIB1
+2025-01-13T16:39:52.772548 [RRC    ] [I] Proc "Serving Cell Configuration" - Cell has SIB2
+2025-01-13T16:39:52.772548 [RRC    ] [I] SIB2 received
+2025-01-13T16:39:52.772549 [MAC    ] [I] [ 7690] Setting configuration
+2025-01-13T16:39:52.772549 [MAC    ] [I] [ 7690] BSR:   Configured timer reTX 2560 ms
+2025-01-13T16:39:52.772550 [RRC    ] [I] Setting PHY config for cc_idx=0
+2025-01-13T16:39:52.772550 [PHY    ] [I] [ 7690] Setting configuration
+2025-01-13T16:39:52.772551 [RRC    ] [I] Set RACH ConfigCommon: NofPreambles=52, ResponseWindow=10, ContentionResolutionTimer=64 ms
+2025-01-13T16:39:52.772551 [RRC    ] [I] Set PUSCH ConfigCommon: P0_pusch=0.000000, DMRS cs=0, delta_ss=0, N_sb=1
+2025-01-13T16:39:52.772552 [RRC    ] [I] Set PUCCH ConfigCommon: DeltaShift=1, CyclicShift=0, N1=0, NRB=1
+2025-01-13T16:39:52.772552 [RRC    ] [I] Set PRACH ConfigCommon: SeqIdx=128, HS=no, FreqOffset=4, ZC=5, ConfigIndex=3
+2025-01-13T16:39:52.772553 [RRC    ] [I] Set Constants and Timers: N310=1, N311=1, t300=2000, t301=100, t310=200, t311=10000
+2025-01-13T16:39:52.772554 [RRC    ] [I] Proc "Serving Cell Configuration" - Cell has SIB3
+2025-01-13T16:39:52.772554 [RRC    ] [I] Proc "Serving Cell Configuration" - Serving Cell Configuration Procedure has finished successfully
+................
+2025-01-13T16:40:26.544221 [RRC    ] [I] Proc "Serving Cell Configuration" - Starting a Serving Cell Configuration Procedure
+2025-01-13T16:40:26.544222 [RRC    ] [I] Proc "Serving Cell Configuration" - Cell has SIB1
+2025-01-13T16:40:26.544222 [RRC    ] [I] Proc "Serving Cell Configuration" - Cell has SIB2
+2025-01-13T16:40:26.544223 [RRC    ] [I] SIB2 received
+2025-01-13T16:40:26.544224 [MAC    ] [I] [  501] Setting configuration
+2025-01-13T16:40:26.544224 [PHY    ] [I] [  502] Setting new PHY configuration cc_idx=0...
+2025-01-13T16:40:26.544225 [MAC    ] [I] [  501] BSR:   Configured timer reTX 2560 ms
+2025-01-13T16:40:26.544225 [PHY    ] [D] [  502] Configuring PRACH parameters
+2025-01-13T16:40:26.544226 [RRC    ] [I] Setting PHY config for cc_idx=0
+2025-01-13T16:40:26.544226 [PHY    ] [I] [  502] Setting configuration
+2025-01-13T16:40:26.544230 [RRC    ] [I] Set RACH ConfigCommon: NofPreambles=52, ResponseWindow=10, ContentionResolutionTimer=64 ms
+2025-01-13T16:40:26.544230 [RRC    ] [I] Set PUSCH ConfigCommon: P0_pusch=0.000000, DMRS cs=0, delta_ss=0, N_sb=1
+2025-01-13T16:40:26.544231 [RRC    ] [I] Set PUCCH ConfigCommon: DeltaShift=1, CyclicShift=0, N1=0, NRB=1
+2025-01-13T16:40:26.544232 [RRC    ] [I] Set PRACH ConfigCommon: SeqIdx=128, HS=no, FreqOffset=4, ZC=5, ConfigIndex=3
+2025-01-13T16:40:26.544233 [PHY    ] [I] [  502] Setting new PHY configuration cc_idx=0...
+2025-01-13T16:40:26.544233 [PHY    ] [D] [  502] Configuring PRACH parameters
+2025-01-13T16:40:26.544233 [RRC    ] [I] Set Constants and Timers: N310=1, N311=1, t300=2000, t301=100, t310=200, t311=10000
+2025-01-13T16:40:26.544234 [RRC    ] [I] Proc "Serving Cell Configuration" - Cell has SIB3
+2025-01-13T16:40:26.544235 [RRC    ] [I] Proc "Serving Cell Configuration" - Serving Cell Configuration Procedure has finished successfully
